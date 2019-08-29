@@ -2,6 +2,16 @@ body {
     background-color: navy;
     color: white;
     margin: 0;
+    font-family: cursive;
+    font-size: 175%;
+}
+
+form input, label {
+    display: block;
+}
+
+form {
+    text-align: left;
 }
 
 section {
@@ -10,7 +20,6 @@ section {
 }
 
 nav, article {
-    width: 100%;
     padding: 15px;
 }
 
@@ -22,11 +31,24 @@ header, footer {
 nav {
     background-color: white;
     color: black;
-    flex: 20%;
+    flex: 30%;
+}
+
+nav a {
+    display:block;
+    border: 1px solid black;
+    max-width: 200px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+a:hover {
+    background-color: red;
 }
 
 article {
     background-color: #999;
+    flex: 60%;
 }
 
 @media screen and (max-width:600px) {
